@@ -20,6 +20,38 @@
   /**
    * colors
    */
+   .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal img {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SHOW MODAL WHEN TARGETED */
+.modal:target {
+  display: flex;
+}
+
 
   /* gradient */
 
